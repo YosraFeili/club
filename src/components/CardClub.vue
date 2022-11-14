@@ -1,5 +1,6 @@
 <template>
   <div class="">
+    <router-link :to="{name:'football-home'}">
 <div :class="{
   football: type === 'footballCard',
   prize: type === 'prize',
@@ -11,6 +12,7 @@
     <div class="text-sm mt-3 cursor-pointer">{{subTitle}}</div>
   </div>
 </div>
+    </router-link>
   </div>
 </template>
 

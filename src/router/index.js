@@ -18,7 +18,8 @@ const routes = [
     children: [
       { path: 'prize', component: () => import('../views/prize/Prize'), name: 'get-prize' },
       { path: 'history', component: () => import('../views/history/LotteryHistory'), name: 'lottery-history' },
-      { path: 'history', component: () => import('../views/history/ScoreHistory'), name: 'score-history' }
+      { path: 'history', component: () => import('../views/history/ScoreHistory'), name: 'score-history' },
+      { path: 'football', component: () => import('../views/football/FootballHome'), name: 'football-home' }
     ]
   }
 ]
