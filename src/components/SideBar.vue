@@ -33,6 +33,7 @@ export default {
   text-align: right;
   color: white;
   font-family: Yekan;
+  font-size: 18px;
 }
 .diamond{
   width: 60px;
