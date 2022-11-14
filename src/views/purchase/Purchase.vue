@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'BuyPoint'
+  name: 'PurchaseHome'
 }
 </script>
 

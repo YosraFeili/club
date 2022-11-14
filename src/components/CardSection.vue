@@ -1,21 +1,24 @@
 <template>
   <div class="flex justify-end space-x-4">
     <div class="w-full space-y-4">
-      <CardClub title="خرید امتیاز" type="prize" rout-name="qa"/>
-      <CardClub  sub-title="ماراتنی وجود ندارد" type="marathon"/>
+      <PurchasCard/>
+      <MarathonCard/>
     </div>
     <div class="w-full space-y-4">
-      <CardClub title="پیش بینی بازی فوتبال" sub-title="بازی را پیش بینی کنید و جایزه بگیرید" type="footballCard"/>
-      <CardClub title="سوال وجواب" sub-title="به سوال ها جواب بده و جایزه ببر" type="qa"/>
+      <FootballCard/>
+      <QaCard/>
     </div>
   </div>
 </template>
 
 <script>
-import CardClub from '@/components/CardClub'
+import FootballCard from '@/components/FootballCard'
+import QaCard from '@/components/QaCard'
+import PurchasCard from '@/components/PurchasCard'
+import MarathonCard from '@/components/MarathonCard'
 export default {
   name: 'CardSection',
-  components: { CardClub }
+  components: { MarathonCard, PurchasCard, QaCard, FootballCard }
 }
 </script>
 

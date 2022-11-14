@@ -21,7 +21,7 @@ const routes = [
       { path: 'history', component: () => import('../views/history/ScoreHistory'), name: 'score-history' },
       { path: 'football', component: () => import('../views/football/FootballHome'), name: 'football-home' },
       { path: 'qa', component: () => import('../views/question-answer/QuestionAnswer'), name: 'qa' },
-      { path: 'purchase', component: () => import('../views/purchase/purchase'), name: 'purchase' },
+      { path: 'purchase', component: () => import('../views/purchase/Purchase'), name: 'purchase' },
       { path: 'marathon', component: () => import('../views/marathon/MarathonHome'), name: 'marathon' }
     ]
   }

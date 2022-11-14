@@ -1,15 +1,9 @@
 <template>
   <div class="">
-    <router-link :to="{name: routeName }">
-      <div :class="{
-  football: type === 'footballCard',
-  prize: type === 'prize',
-  qa: type === 'qa',
-  marathon: type === 'marathon'
-}">
+    <router-link :to="{name: 'marathon' }">
+      <div class="marathon">
         <div class="space-y-2">
-          <div class="text-lg mt-3 cursor-pointer">{{ title }}</div>
-          <div class="text-sm mt-3 cursor-pointer">{{ subTitle }}</div>
+          <div class="text-lg mt-3 cursor-pointer">ماراتنی وجود ندارد</div>
         </div>
       </div>
     </router-link>
@@ -18,52 +12,11 @@
 
 <script>
 export default {
-  name: 'CardClub',
-  props: {
-    title: String,
-    subTitle: String,
-    type: String,
-    routeName: String
-  }
+  name: 'MarathonCard'
 }
 </script>
 
 <style scoped>
-.football {
-  height: 120px;
-  display: flex;
-  justify-content: end;
-  background: #ffd500 url("http://preproduction.lenz.ir/img/football-bet-bg.2c6ac4f1.svg") no-repeat;
-  border-radius: 5px;
-  padding: 1.25rem 1.25rem 1.25rem 0;
-  text-align: right;
-  color: black;
-  font-family: Yekan;
-}
-
-.prize {
-  height: 120px;
-  display: flex;
-  justify-content: end;
-  background: #ffae73 url("http://preproduction.lenz.ir/img/buy-score.3b6c764e.svg") no-repeat;
-  border-radius: 5px;
-  padding: 1.25rem 1.25rem 1.25rem 0;
-  color: white;
-  font-family: Yekan;
-}
-
-.qa {
-  height: 120px;
-  display: flex;
-  justify-content: end;
-  background: #73ff9a url("http://preproduction.lenz.ir/img/qa-bg.eacebe19.svg") no-repeat;
-  border-radius: 5px;
-  padding: 1.25rem 1.25rem 1.25rem 0;
-  text-align: right;
-  color: white;
-  font-family: Yekan;
-}
-
 .marathon {
   height: 120px;
   display: flex;
