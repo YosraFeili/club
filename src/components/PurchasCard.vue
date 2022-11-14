@@ -3,7 +3,7 @@
     <router-link :to="{name: 'purchase' }">
       <div class="purchase">
         <div class="space-y-2">
-          <div class="text-lg mt-3 cursor-pointer">خرید امتیاز</div>
+          <div class="text-lg mt-6">خرید امتیاز</div>
         </div>
       </div>
     </router-link>
@@ -27,5 +27,8 @@ export default {
   color: white;
   font-family: Yekan;
   text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
 }
 </style>

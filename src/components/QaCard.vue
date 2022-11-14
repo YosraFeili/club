@@ -3,8 +3,8 @@
     <router-link :to="{name: 'qa' }">
       <div class="qa">
         <div class="space-y-2">
-          <div class="text-lg mt-3 cursor-pointer">سوال وجواب</div>
-          <div class="text-sm mt-3 cursor-pointer">به سوال ها جواب بده و جایزه ببر</div>
+          <div class="mt-3">سوال وجواب</div>
+          <div class="text-sm mt-3">.به سوال ها جواب بده و جایزه ببر</div>
         </div>
       </div>
     </router-link>
@@ -26,7 +26,10 @@ export default {
   border-radius: 5px;
   padding: 1.25rem 1.25rem 1.25rem 0;
   text-align: right;
-  color: white;
+  color: black;
   font-family: Yekan;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
 }
 </style>
