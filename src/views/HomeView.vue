@@ -12,7 +12,7 @@
 <script>
 // @ is an alias to /src
 
-import CardSection from '@/components/CardSection'
+import CardSection from '@/components/cards/CardSection'
 import SideBar from '@/components/SideBar'
 
 export default {

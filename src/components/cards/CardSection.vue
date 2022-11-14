@@ -12,10 +12,10 @@
 </template>
 
 <script>
-import FootballCard from '@/components/FootballCard'
-import QaCard from '@/components/QaCard'
-import PurchasCard from '@/components/PurchasCard'
-import MarathonCard from '@/components/MarathonCard'
+import FootballCard from '@/components/cards/FootballCard'
+import QaCard from '@/components/cards/QaCard'
+import PurchasCard from '@/components/cards/PurchasCard'
+import MarathonCard from '@/components/cards/MarathonCard'
 export default {
   name: 'CardSection',
   components: { MarathonCard, PurchasCard, QaCard, FootballCard }
