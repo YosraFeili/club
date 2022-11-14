@@ -17,7 +17,8 @@ const routes = [
     component: Club,
     children: [
       { path: 'prize', component: () => import('../views/prize/Prize'), name: 'get-prize' },
-      { path: 'history', component: () => import('../views/history/LotteryHistory'), name: 'Lottery-history' }
+      { path: 'history', component: () => import('../views/history/LotteryHistory'), name: 'lottery-history' },
+      { path: 'history', component: () => import('../views/history/ScoreHistory'), name: 'score-history' }
     ]
   }
 ]

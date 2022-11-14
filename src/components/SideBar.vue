@@ -18,10 +18,12 @@
     </div>
     <hr>
     <div class="p-5 cursor-pointer">
-      <router-link :to="{name: 'Lottery-history'}">تاریخچه قرعه کشی</router-link>
+      <router-link :to="{name: 'lottery-history'}">تاریخچه قرعه کشی</router-link>
     </div>
     <hr>
-    <div class="p-5 cursor-pointer">تاریخچه امتیازات</div>
+    <div class="p-5 cursor-pointer">
+      <router-link :to="{name:'score-history'}">تاریخچه امتیازات</router-link>
+    </div>
   </div>
 </div>
 </template>
