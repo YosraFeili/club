@@ -19,7 +19,10 @@ const routes = [
       { path: 'prize', component: () => import('../views/prize/Prize'), name: 'get-prize' },
       { path: 'history', component: () => import('../views/history/LotteryHistory'), name: 'lottery-history' },
       { path: 'history', component: () => import('../views/history/ScoreHistory'), name: 'score-history' },
-      { path: 'football', component: () => import('../views/football/FootballHome'), name: 'football-home' }
+      { path: 'football', component: () => import('../views/football/FootballHome'), name: 'football-home' },
+      { path: 'qa', component: () => import('../views/question-answer/QuestionAnswer'), name: 'qa' },
+      { path: 'purchase', component: () => import('../views/purchase/purchase'), name: 'purchase' },
+      { path: 'marathon', component: () => import('../views/marathon/MarathonHome'), name: 'marathon' }
     ]
   }
 ]

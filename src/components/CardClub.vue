@@ -1,17 +1,17 @@
 <template>
   <div class="">
-    <router-link :to="{name:'football-home'}">
-<div :class="{
+    <router-link :to="{name: router }">
+      <div :class="{
   football: type === 'footballCard',
   prize: type === 'prize',
   qa: type === 'qa',
   marathon: type === 'marathon'
 }">
-  <div class="space-y-2">
-    <div class="text-lg mt-3 cursor-pointer">{{title}}</div>
-    <div class="text-sm mt-3 cursor-pointer">{{subTitle}}</div>
-  </div>
-</div>
+        <div class="space-y-2">
+          <div class="text-lg mt-3 cursor-pointer">{{ title }}</div>
+          <div class="text-sm mt-3 cursor-pointer">{{ subTitle }}</div>
+        </div>
+      </div>
     </router-link>
   </div>
 </template>
@@ -22,13 +22,28 @@ export default {
   props: {
     title: String,
     subTitle: String,
-    type: String
+    type: String,
+    routeName: String
+  },
+  computed: {
+    router () {
+    }
+  },
+  data () {
+    return {
+      routerName: {
+        football: 'football-home',
+        questionAnswer: 'qa',
+        marathon: 'marathon',
+        buyPoints: 'purchase'
+      }
+    }
   }
 }
 </script>
 
 <style scoped>
-.football{
+.football {
   height: 120px;
   display: flex;
   justify-content: end;
@@ -36,9 +51,10 @@ export default {
   border-radius: 5px;
   padding: 1.25rem 1.25rem 1.25rem 0;
   text-align: right;
-  color: white;
+  color: black;
   font-family: Yekan;
 }
+
 .prize {
   height: 120px;
   display: flex;
@@ -49,6 +65,7 @@ export default {
   color: white;
   font-family: Yekan;
 }
+
 .qa {
   height: 120px;
   display: flex;
@@ -60,6 +77,7 @@ export default {
   color: white;
   font-family: Yekan;
 }
+
 .marathon {
   height: 120px;
   display: flex;

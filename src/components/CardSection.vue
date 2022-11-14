@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-end space-x-4">
     <div class="w-full space-y-4">
-      <CardClub title="خرید امتیاز" type="prize"/>
+      <CardClub title="خرید امتیاز" type="prize" rout-name="qa"/>
       <CardClub  sub-title="ماراتنی وجود ندارد" type="marathon"/>
     </div>
     <div class="w-full space-y-4">
