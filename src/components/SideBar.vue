@@ -32,6 +32,7 @@ export default {
   border-radius: 5px;
   text-align: right;
   color: white;
+  font-family: Yekan;
 }
 .diamond{
   width: 60px;

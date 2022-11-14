@@ -35,6 +35,7 @@ export default {
   padding: 1.25rem 1.25rem 1.25rem 0;
   text-align: right;
   color: white;
+  font-family: Yekan;
 }
 .prize {
   height: 120px;
@@ -44,6 +45,7 @@ export default {
   border-radius: 5px;
   padding: 1.25rem 1.25rem 1.25rem 0;
   color: white;
+  font-family: Yekan;
 }
 .qa {
   height: 120px;
@@ -54,6 +56,7 @@ export default {
   padding: 1.25rem 1.25rem 1.25rem 0;
   text-align: right;
   color: white;
+  font-family: Yekan;
 }
 .marathon {
   height: 120px;
@@ -63,5 +66,6 @@ export default {
   border-radius: 5px;
   padding: 1.25rem 1.25rem 1.25rem 0;
   color: white;
+  font-family: Yekan;
 }
 </style>
