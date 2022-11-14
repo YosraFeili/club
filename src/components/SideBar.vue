@@ -11,9 +11,15 @@
       </div>
     </div>
     <hr>
-    <div class="p-5 cursor-pointer">دریافت جایزه</div>
+    <div class="p-5 cursor-pointer">کسب امتیاز</div>
     <hr>
-    <div class="p-5 cursor-pointer">تاریخچه قرعه کشی</div>
+    <div class="p-5 cursor-pointer">
+    <router-link :to="{name: 'get-prize'}">دریافت جایزه</router-link>
+    </div>
+    <hr>
+    <div class="p-5 cursor-pointer">
+      <router-link :to="{name: 'Lottery-history'}">تاریخچه قرعه کشی</router-link>
+    </div>
     <hr>
     <div class="p-5 cursor-pointer">تاریخچه امتیازات</div>
   </div>

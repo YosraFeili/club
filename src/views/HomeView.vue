@@ -3,7 +3,7 @@
     <div class="w-1/3 mt-20">
       <CardSection/>
     </div>
-    <div class="w-1/8 mt-20">
+    <div class="w-1/6 mt-20">
       <SideBar/>
     </div>
   </div>
