@@ -5,11 +5,11 @@
     </div>
     <div class="card">
       <div class="card-header">خرید پکیج</div>
-      <div class="card-body">
+      <div class="card-body" v-for="pack in packageList" :key="pack.id">
         <div class="product-card" :class="{selected}">
-          <div class="">4000تومان</div>
+          <div class="">{{pack.price}}</div>
           <div class="product-row space-x-3">
-            <label for="product.id">پکیج 10 امتیازی</label>
+            <label for="product.id">{{ pack.title }}</label>
             <input id="product.id" type="radio" name="products" value="product" v-model="selected">
           </div>
         </div>
@@ -19,11 +19,14 @@
 </template>
 
 <script>
+import { packageList } from '@/index'
+
 export default {
   name: 'PopUp',
   data () {
     return {
-      selected: ''
+      selected: '',
+      packageList: packageList
     }
   },
 
