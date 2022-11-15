@@ -7,12 +7,15 @@
       <div class="card-header">خرید پکیج</div>
       <div class="card-body" v-for="pack in packageList" :key="pack.id">
         <div class="product-card" :class="{selected}">
-          <div class="">{{pack.price}}</div>
+          <div class="">{{ pack.price }}</div>
           <div class="product-row space-x-3">
             <label for="product.id">{{ pack.title }}</label>
             <input id="product.id" type="radio" name="products" value="product" v-model="selected">
           </div>
         </div>
+      </div>
+      <div class="card-footer flex justify-center">
+        <button class="btn">خرید اشتراک</button>
       </div>
     </div>
   </div>
@@ -70,7 +73,8 @@ export default {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
-.card-header{
+
+.card-header {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   background: #1c1d32;
@@ -80,12 +84,14 @@ export default {
   font-family: Yekan;
   font-size: 18px;
 }
-.card-body{
+
+.card-body {
   display: flex;
   justify-content: center;
   padding: 20px;
 }
-.product-card{
+
+.product-card {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -116,4 +122,13 @@ export default {
   align-items: center;
 }
 
+.btn {
+  width: 150px;
+  border-radius: 30px;
+  padding: 5px;
+  color: white;
+  background: #fdbf50;
+  font-family: Yekan;
+  font-size: 18px;
+}
 </style>
