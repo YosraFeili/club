@@ -1,20 +1,28 @@
 <template>
   <div class="bg-popup">
     <div class="icon-cancel">
-      <img src="../assets/icons/close.svg" @click="close">
+      <img src="../assets/icons/close.svg" class="cursor-pointer" @click="close">
     </div>
     <div class="card">
       <div class="card-header">خرید پکیج</div>
-      <div class="card-body" v-for="pack in packageList" :key="pack.id">
-        <div class="product-card" :class="{selected}">
-          <div class="">{{ pack.price }}</div>
-          <div class="product-row space-x-3">
-            <label for="product.id">{{ pack.title }}</label>
-            <input id="product.id" type="radio" name="products" value="product" v-model="selected">
+      <div class="card-body">
+        <div v-for="pack in packageList" :key="pack.id" @click="selectPackage()">
+          <div class="product-card" :class="{selected: product && pack.id === product.id}">
+            <div class="">{{ pack.price }}</div>
+            <div class="product-row space-x-3">
+              <label :for="pack.id">{{ pack.title }}</label>
+              <input :id="pack.id" type="radio" name="products" :value="pack" v-model="product">
+            </div>
           </div>
         </div>
       </div>
-      <div class="card-footer flex justify-center">
+      <div class="payment-section" id="paymentMethod" v-if="paymentSection">
+        <div class="payment-title"> : انتخاب نحوه پرداخت</div>
+        <div class="payment-option" v-for="mode in paymentModes" :key="mode.id">
+          <div>{{mode.title}}</div>
+        </div>
+      </div>
+      <div class="card-footer flex justify-center mt-5">
         <button class="btn">خرید اشتراک</button>
       </div>
     </div>
@@ -22,20 +30,26 @@
 </template>
 
 <script>
-import { packageList } from '@/index'
+import { packageList, paymentMode } from '@/index'
 
 export default {
   name: 'PopUp',
   data () {
     return {
-      selected: '',
-      packageList: packageList
+      product: '',
+      packageList: packageList,
+      paymentModes: paymentMode,
+      paymentSection: false
     }
   },
 
   methods: {
     close () {
       this.$emit('closePopUp')
+    },
+
+    selectPackage () {
+      this.paymentSection = true
     }
   }
 }
@@ -61,7 +75,6 @@ export default {
   position: relative;
   top: 50px;
   left: 50px;
-  cursor: pointer;
 }
 
 .card {
@@ -86,9 +99,19 @@ export default {
 }
 
 .card-body {
-  display: flex;
-  justify-content: center;
   padding: 20px;
+  height: 230px;
+  overflow-y: scroll;
+}
+
+.card-body::-webkit-scrollbar {
+  background: #ffffff;
+  width: 3px;
+}
+
+.card-body::-webkit-scrollbar-thumb {
+  background: #FDBF50FF;
+  border-radius: 5px;
 }
 
 .product-card {
@@ -100,35 +123,64 @@ export default {
   padding: 20px;
   color: white;
   font-family: Yekan;
+  margin-bottom: 5px;
 }
 
-/*input[type='radio'] + label {*/
-/*  display: inline-block;*/
-/*  cursor: pointer;*/
-/*  position: relative;*/
-/*  padding-right: 30px;*/
-/*  font-size: 13px;*/
-/*  color: white;*/
-/*}*/
-/*.selected {*/
-/*   border: 1px solid #fdbf50;*/
-/* }*/
-/*input[type='radio'] {*/
-/*  display: none !important;*/
-/*  *display: inline;*/
-/*}*/
+.selected {
+  border: 1px solid #FDBF50FF;
+}
+
+input[type='radio'] + label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+  font-size: 13px;
+  color: white;
+}
+
+input[type='radio'] {
+  display: none !important;
+  *display: inline;
+}
+
 .product-row {
   display: flex;
   align-items: center;
 }
 
-.btn {
-  width: 150px;
-  border-radius: 30px;
-  padding: 5px;
+.payment-section {
+  padding: 20px;
+}
+
+.payment-title {
   color: white;
-  background: #fdbf50;
+  text-align: right;
   font-family: Yekan;
-  font-size: 18px;
+}
+
+.payment-option {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 8px 5px 0 0;
+  text-align: right;
+  color: white;
+  font-family: Yekan;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn {
+  width: 250px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Yekan;
+  text-align: center;
+  padding: 11px 63px 10px 64px;
+  border-radius: 24px;
+  border: none;
+  background-color: #FDBF50FF;
+  color: white;
 }
 </style>
