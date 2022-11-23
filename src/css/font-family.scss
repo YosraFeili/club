@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "vazir-light";
+  src: url("../css/font/Vazir_Light.ttf");
+}
+
+@font-face {
+  font-family: "vazir-bold";
+  src: url("../css/font/Vazir_Bold.ttf");
+}
+
+
+@font-face {
+  font-family: "font-titr";
+  src: url("../css/font/Far_TitrBd.ttf");
+}
+
+
+@font-face {
+  font-family: "font-yaqut";
+  src: url("../css/font/Far_Yagut.ttf");
+}
+
+.font-yaqut {
+  font-family: "font-yaqut";
+}
+.vazir-light {
+  font-family: "vazir-light";
+}
+.vazir-bold {
+  font-family: "vazir-bold";
+}
+
+.font-titr {
+  font-family: "font-titr";
+}
+
+
+// global
+* {
+  font-family: 'vazir-light';
+}

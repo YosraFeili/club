@@ -1,12 +1,10 @@
 <template>
-  <div class="flex justify-end space-x-4">
-    <div class="w-full space-y-4">
-      <PurchasCard/>
-      <MarathonCard/>
-    </div>
-    <div class="w-full space-y-4">
-      <FootballCard/>
-      <QaCard/>
+  <div class="">
+    <div class="mobile-view">
+        <PurchasCard class="mt-3"/>
+        <MarathonCard class="mt-3"/>
+        <FootballCard class="mt-3"/>
+        <QaCard class="mt-3"/>
     </div>
   </div>
 </template>

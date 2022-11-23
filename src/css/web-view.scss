@@ -1,0 +1,24 @@
+.web-view{
+  @media (max-width: 769px) {
+    display: none;
+  }
+}
+.web-dashboard{
+  background-color: $primary;
+  .web-dashboard-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px;
+    color: $positive;
+    text-align: center;
+    .diamond{
+      border-radius: 50%;
+      border: 1px solid $gray;
+      padding: 8px;
+      background-color: $main;
+    }
+  }
+}
+

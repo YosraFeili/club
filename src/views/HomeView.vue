@@ -1,22 +1,18 @@
 <template>
-  <div class="card-home flex justify-center space-x-20">
-    <div class="w-1/2 mt-20">
-      <CardSection/>
-    </div>
-    <div class="w-1/6 mt-20">
-      <SideBar/>
+  <div class="">
+    <div>
+      <ClubHome class="w-full"/>
+      <CardSection class="w-full p-5"/>
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 import CardSection from '@/components/cards/CardSection'
-import SideBar from '@/components/SideBar'
+import ClubHome from '@/views/club/Club'
 
 export default {
   name: 'HomeView',
-  components: { SideBar, CardSection }
+  components: { ClubHome, CardSection }
 }
 </script>

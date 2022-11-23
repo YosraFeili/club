@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .purchase {
   height: 120px;
   display: flex;
@@ -38,7 +38,6 @@ export default {
   border-radius: 5px;
   padding: 1.25rem 1.25rem 1.25rem 0;
   color: white;
-  font-family: Yekan;
   text-align: center;
   cursor: pointer;
   font-size: 20px;
