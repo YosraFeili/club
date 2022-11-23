@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="web-dashboard ">
+    <div class="web-dashboard">
       <div class="web-dashboard-header space-x-6">
         <div class="dashboard-text">
           <div class="mt-5 text-white">امتیازات من</div>

@@ -1,10 +1,12 @@
 .web-view{
-  @media (max-width: 769px) {
+  @media (max-width: 821px) {
     display: none;
   }
 }
 .web-dashboard{
   background-color: $primary;
+  margin-top: 110px;
+  border-radius: 5px;
   .web-dashboard-header{
     display: flex;
     justify-content: center;

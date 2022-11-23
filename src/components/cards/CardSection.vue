@@ -1,10 +1,20 @@
 <template>
   <div class="">
-    <div class="mobile-view">
-        <PurchasCard class="mt-3"/>
-        <MarathonCard class="mt-3"/>
-        <FootballCard class="mt-3"/>
-        <QaCard class="mt-3"/>
+    <div class="mobile-view space-y-3">
+        <PurchasCard class=""/>
+        <MarathonCard class=""/>
+        <FootballCard class=""/>
+        <QaCard class=""/>
+    </div>
+    <div class="web-view flex justify-center space-x-3">
+      <div class="w-full space-y-3">
+        <PurchasCard class=""/>
+        <MarathonCard class=""/>
+      </div>
+      <div class="w-full space-y-3">
+        <FootballCard class=""/>
+        <QaCard class=""/>
+      </div>
     </div>
   </div>
 </template>

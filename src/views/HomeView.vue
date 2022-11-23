@@ -1,8 +1,12 @@
 <template>
   <div class="">
-    <div>
+    <div class="mobile-view">
       <ClubHome class="w-full"/>
       <CardSection class="w-full p-5"/>
+    </div>
+    <div class="web-view flex justify-center items-center space-x-24">
+      <CardSection class="w-3/5"/>
+      <ClubHome class="w-1/5"/>
     </div>
   </div>
 </template>
