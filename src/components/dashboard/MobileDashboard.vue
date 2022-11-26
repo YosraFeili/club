@@ -4,7 +4,7 @@
       <div class="mobile-dashboard">
         <div class="header-dashboard">
           <div class="text-lg">
-            <router-link :to="{name: 'dashboard'}">داشبورد</router-link>
+            <router-link :to="{name: 'club'}">داشبورد</router-link>
           </div>
           <div class="flex justify-center items-center space-x-6 text-right">
             <div class="dashboard-text mt-4">

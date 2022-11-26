@@ -3,9 +3,10 @@
     display: none;
   }
 }
+
 .web-dashboard{
+  width: 25%;
   background-color: $primary;
-  margin-top: 110px;
   border-radius: 5px;
   .web-dashboard-header{
     display: flex;

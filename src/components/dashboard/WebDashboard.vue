@@ -13,7 +13,7 @@
       <div class="web-dashboard-body">
         <hr>
         <div class="text-white text-center p-5 cursor-pointer">
-          <router-link :to="{name: 'dashboard'}">داشبورد</router-link>
+          <router-link :to="{name: 'club'}">داشبورد</router-link>
         </div>
         <hr>
         <div class="text-white text-center p-5 cursor-pointer">
