@@ -3,7 +3,7 @@
     <router-link :to="{name: 'marathon' }">
       <div class="marathon">
         <div class="space-y-2">
-          <div class="text-lg mt-6">ماراتنی وجود ندارد</div>
+          <div class="mt-6">ماراتنی وجود ندارد</div>
         </div>
       </div>
     </router-link>
@@ -25,9 +25,8 @@ export default {
   border-radius: 5px;
   padding: 1.25rem 1.25rem 1.25rem 0;
   color: black;
-  font-family: Yekan;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 13px;
   font-weight: 600;
 }
 </style>

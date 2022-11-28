@@ -2,7 +2,7 @@
   <div class="">
       <div class="purchase" @click="purchasePopUp=true">
         <div class="space-y-2">
-          <div class="text-lg mt-6">خرید امتیاز</div>
+          <div class="mt-6">خرید امتیاز</div>
         </div>
       </div>
     <div class="">
@@ -40,7 +40,7 @@ export default {
   color: white;
   text-align: center;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 13px;
   font-weight: 600;
 }
 </style>

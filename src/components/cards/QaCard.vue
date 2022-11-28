@@ -4,7 +4,7 @@
       <div class="qa">
         <div class="space-y-2">
           <div class="mt-3">سوال وجواب</div>
-          <div class="text-sm mt-3">.به سوال ها جواب بده و جایزه ببر</div>
+          <div class="mt-3">.به سوال ها جواب بده و جایزه ببر</div>
         </div>
       </div>
     </router-link>
@@ -27,9 +27,8 @@ export default {
   padding: 1.25rem 1.25rem 1.25rem 0;
   text-align: right;
   color: black;
-  font-family: Yekan;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 13px;
   font-weight: 600;
 }
 </style>
