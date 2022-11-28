@@ -7,7 +7,7 @@
           <div class="mt-1">0</div>
         </div>
         <div class="diamond">
-          <img src="../../assets/diamond.39dfd0f2.svg">
+          <img src="../../assets/icons/diamond.39dfd0f2.svg">
         </div>
       </div>
       <div class="web-dashboard-body">

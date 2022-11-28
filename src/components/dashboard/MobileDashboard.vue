@@ -12,7 +12,7 @@
               <h1 class="mt-2 font-bold">174</h1>
             </div>
             <div class="icon-row">
-              <img src="../../assets/diamond.39dfd0f2.svg" class="diamond-icon">
+              <img src="../../assets/icons/diamond.39dfd0f2.svg" class="diamond-icon">
             </div>
           </div>
         </div>
